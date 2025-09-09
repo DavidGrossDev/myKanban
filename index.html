@@ -6,27 +6,28 @@
     <link rel="stylesheet" href="./style.css">
     <title>My Kanbanboard</title>
 </head>
-<body>
+<body onload="init()">
     <header></header>
     <main class="index-main">
         <section>
             <h2><p class="section-headline">To-do</p><a href="./task_form.html"><img src="./assets/img/add.png" alt="" class="section-img"></a></h2>
-            <ul id="to_do_content"><li>hallo</li></ul>
+            <ul id="to_do_content" ondrop="moveTo('toDo')" ondragover="allowDrop(event)"></ul>
         </section>
         <section>
             <h2><p class="section-headline">Sprint</p><a href="./task_form.html"><img src="./assets/img/add.png" alt="" class="section-img"></a></h2>
-            <ul id="sprint_content"></ul>
+            <ul id="sprint_content" ondrop="moveTo('sprint')" ondragover="allowDrop(event)"></ul>
         </section>
         <section>
             <h2><p class="section-headline">In Progress</p><a href="./task_form.html"><img src="./assets/img/add.png" alt="" class="section-img"></a></h2>
-            <ul id="in_progress_content"></ul>
+            <ul id="in_progress_content" ondrop="moveTo('inProgress')" ondragover="allowDrop(event)"></ul>
         </section>
         <section>
             <h2><p class="section-headline">Done</p><a href="./task_form.html"><img src="./assets/img/add.png" alt="" class="section-img"></a></h2>
-            <ul id="done_content"></ul>
+            <ul id="done_content" ondrop="moveTo('done')" ondragover="allowDrop(event)"></ul>
         </section>
     </main>
     <footer></footer>
+
     
     <script src="./script.js"></script>
 </body>
