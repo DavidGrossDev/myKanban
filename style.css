@@ -56,14 +56,25 @@ footer {
     list-style: none;
     padding-inline-start: 0;
     padding: 4px;
+    height: 100%;
 }
 
 .index-main>section>ul>li {
     cursor: pointer;
-    height: 32px;
+    min-height: 32px;
     border: 1px solid black;
     border-radius: 8px;
     align-content: center;
+    margin: 0 0 8px 0;
+}
+
+.index-main>section>ul>li>div>h3 {
+    border-bottom: 3px double lightgray;
+    border-radius: 8px;
+}
+
+.index-main>section>ul>li>div>p {
+    margin: 8px 0;
 }
 
 a {
@@ -74,7 +85,6 @@ a {
 }
 
 .addition-form-card {
-    background-color: aquamarine;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -102,11 +112,11 @@ a {
 }
 
 .left-form-side {
-    height: 500px;
+    height: 700px;
 }
 
 .right-form-side {
-    height: 350px;
+    height: 550px;
 }
 
 .input-task>div>section {
@@ -187,4 +197,16 @@ a {
 
 .form-textarea>textarea {
     min-height: 80px;
+}
+
+.task-ranking {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.task-ranking>input {
+    height: 32px;
+    width: 100px;
 }
